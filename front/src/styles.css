@@ -1,0 +1,168 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #292e1a, #163e1d, #0f3460, #2a2c1b);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #eee;
+    min-height: 100vh;
+  }
+  
+  /* Animation du fond */
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #f8f9fa;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  /* Boutons stylisés */
+  button {
+    background: linear-gradient(45deg, #00ff22, #24b300);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00aaff;
+    text-shadow: 0 0 10px #00aaff;
+  }
+  
+  /* Tableaux stylisés */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #f8f9fa;
+    backdrop-filter: blur(10px);
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  table th {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* Formulaires */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  form input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8f9fa;
+    font-size: 1rem;
+  }
+  
+  form input::placeholder {
+    color: #ccc;
+  }
+  
+  form button {
+    align-self: center;
+  }
+  
+  /* Boutons d'action dans les tableaux */
+  table button {
+    background: linear-gradient(45deg, #28a745, #218838);
+    margin: 0 5px;
+    padding: 7px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  table button:hover {
+    transform: scale(1.1);
+  }
+  
+  table button:last-child {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+  }
+  
+  table button:last-child:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Conteneur principal */
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
