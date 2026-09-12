@@ -97,8 +97,8 @@ MongoDB is used to store and manage application data related to:
       
                                            
      ┌─────────┐  ┌─────────┐
-     │ MongoDB       │  │    Stripe          │
-     │ Database        │  │  Payment        │
+     │ MongoDB       Stripe          
+     │ Database      Payment        
      └─────────┘  └─────────┘
 
 
